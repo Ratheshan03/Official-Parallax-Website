@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== AJAX ===============-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- ============= TITLE-ICON ============ -->
+        <link rel="shortcut icon" href="packages/img/icon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="packages/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="packages/css/styles.css">
+
+        <!--=============== FONT AWESOME ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <title>PARALLAX - 2021</title>
+    </head>
+    <body>
+        <div class="preloader"></div>
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" ><img class="nav__logo" src="./packages/img/navLogo.png"/></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list" id="menu">
+                        <li class="nav__item active-link">
+                            <a href="#home" class="nav__link ">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#register" class="nav__link">Register</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./packages/OurTeam/team.html" class="nav__link">Our Team</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main ">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="packages/img/cover.png" alt="Site-main-poster" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Rotaract Club of IIT Presents</span>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/iitrotaract" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href=" https://www.instagram.com/rotaract_iit/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/iitrotaract?s=11" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href=" https://www.youtube.com/user/iitrotaract" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info" href="#register">
+                            <a href="#register" class="button button--flex button--link home__info-button">
+                                Register Now <i class="ri-arrow-right-line"></i>
+                            </a>
+                    </div>
+                </div>
+            </section>
+
+
+             <!--==================== Countdown ====================-->
+            <section class="countdown section" id="countdown">
+                <div class="countdown__container container grid">
+                    <div class="countdown__img">
+                        <div class="countdown__img-overlay">
+                            <img src="./packages/img/countdown.png" alt="comming-soon-poster" class="countdown__img-one">
+                        </div>
+                    </div>
+                    
+                    <div class="countdown__data comming-soon">
+                        <div class="countdown__div">
+                            <!-- <h2>CountDown!</h2> -->
+                            <div class="countdown">
+                                <div class="container-day">
+                                    <h3 class="day">Time</h3>
+                                    <h3>Days</h3>
+                                </div>
+                                <div class="container-hour">
+                                    <h3 class="hour">Time</h3>
+                                    <h3>Hours</h3>
+                                </div>
+                                <div class="container-min">
+                                    <h3 class="min">Time</h3>
+                                    <h3>Minute</h3>
+                                </div>
+                                <div class="container-sec">
+                                    <h3 class="sec">Time</h3>
+                                    <h3>Second</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">PARALLAX <br> UI/UX Hackathon</h2>
+                        <p class="about__description">Project PARALLAX is a hackathon introduced by the Rotaract club of IIT from the year 2020. Its main objective is to provide an opportunity for the gifted undergraduates of Sri Lanka to showcase their talents in designing and coding websites of high quality in a competition.
+                            <br><br>Parallax aims to provide the guiding light for gifted designers to build their personalities and brand as creative developers and designers. This will bring out the hidden talents of the participants so that they can polish and groom themselves well to face the competitive world of developers. 
+                        </p>
+                        <a href="http://rciit.org/" target="_blank" class="button">See more on our official RACIIT website</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="./packages/img/UI.png" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="./packages/img/UX.png" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section" id="discover">
+                <h2 class="section__title">FACTS<br>ABOUT OUR HACKATHON</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">18</h2>
+                            <span class="experience__description"> Hours of <br>UX Designing</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">6</h2>
+                            <span class="experience__description">Hours of<br>UI Development</span>
+                        </div>
+                    </div>
+                    <div class="experience__data">
+                        <p class="data__description" >The competition will be starting
+                             on the 25th of September 2021 at 10.00 am and will be commencing till the following day the 26th September.
+                            The winners will be awarded with exciting prices at the end of the project.</p>
+                    </div>
+
+                    <div class="ex-co">
+                        <div class="image-container">
+                            <div class="image__overlay">
+                                <img src="packages/img/prize1.jpeg" alt="" class="experience__img-one">
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <div class="image__overlay">
+                                <img src="packages/img/prize2.jpeg" alt="" class="experience__img-one">
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <div class="image__overlay">
+                                <img src="packages/img/prize3.jpeg" alt="" class="experience__img-one">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section">
+                <h2 class="section__title">OUR<br>JUDGES THIS YEAR</h2>
+                
+                <div class="discover__container container swiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="packages/img/new-p.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description">Not finalized yet</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="packages/img/new-p.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description">Not finalized yet</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="packages/img/new-p.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description">Not finalized yet</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="packages/img/new-p.png" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title"></h2>
+                                <span class="discover__description">Not finalized yet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">OFFICIAL TRAILER</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Fasten Your Seatbelts for PARALLAX-2021.</p>
+                    
+                    <div class="video__content">
+                        <video id="video-file" poster="packages/img/Thumnail.jpeg" controls>
+                            <source src="./packages/video/Final_1.mp4"  type="video/mp4" class="video-screen">
+                        </video>
+
+                        <!-- <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button> -->
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== REGISTER Form ====================-->
+            <section class="register section" id="register">
+                <h2 class="section__title">REGISTER YOUR TEAM</h2>
+                        <section class="section-f">
+                            <div class="imgB">
+                              <img src="./packages/img/Register.png" alt="" />
+                            </div>
+                            <div class="contentB">
+                                <div class="container-f">
+                                  <div class="progress-bar">
+                                    <div class="step">
+                                      <p>BEGIN</p>
+                                      <div class="bullet">
+                                        <span>1</span>
+                                      </div>
+                                      <div class="check fas fa-check"></div>
+                                    </div>
+                                    <div class="step">
+                                      <p>TEAM</p>
+                                      <div class="bullet">
+                                        <span>2</span>
+                                      </div>
+                                      <div class="check fas fa-check"></div>
+                                    </div>
+                                    <div class="step">
+                                      <p>OTHER</p>
+                                      <div class="bullet">
+                                        <span>3</span>
+                                      </div>
+                                      <div class="check fas fa-check"></div>
+                                    </div>
+                                    <div class="step">
+                                      <p>SUBMIT</p>
+                                      <div class="bullet">
+                                        <span>4</span>
+                                      </div>
+                                      <div class="check fas fa-check"></div>
+                                    </div>
+                                </div>
+                                  <div class="form-outer">
+                                    <form action=""  autocomplete="off" id="submit-form" name="google-sheet" class="register__form grid">
+                                      <div class="page slide-page">
+
+                                        <div class="field">
+                                          <div class="label welcome-msg"  for="">COMPLETE THE FORM WITH ALL THE RELAVANT DETAILS</div>
+                                        </div>
+
+                                        <div class="field ">
+                                          <div class="label">Participant - 1</div>
+                                          <input name="Participant-1" id="name1-input" type="text" placeholder="Enter your full name" />
+                                          <input name="Email-1" id="email1-input" type="email" placeholder="Enter your email" />
+                                        </div>
+
+                                        <div class="field ">
+                                          <div class="label">Participant - 2</div>
+                                          <input name="Participant-2" id="name2-input" type="text" placeholder="Enter your full name"  />
+                                          <input  name="Email-2" id="email2-input" type="email" placeholder="Enter your email" />
+                                        </div>
+
+                                        <div class="field ">
+                                          <div class="label">Participant - 3</div>
+                                          <input name="Participant-3" id="name3-input" type="text" placeholder="Enter your full name" />
+                                          <input name="Email-3" id="email3-input" type="email" placeholder="Enter your email" />
+                                        </div>
+
+                                        <div class="field">
+                                          <button class="firstNext next">Next</button>
+                                        </div>
+                                      </div>
+                                      <div class="page page-2">
+                                        <div class="field">
+                                            <div class="label">Team Name</div>
+                                            <input name="TeamName" id="team-input" type="text" placeholder="Enter the team name"  />
+                                          </div>
+                                        <div class="field">
+                                          <div class="label">Team Leader Name</div>
+                                          <input name="Team-Leader" id="leader-input" type="text" placeholder="Enter the team leader name"/>
+                                        </div>
+                                        <div class="field">
+                                          <div class="label">Team / Team Leader - Email</div>
+                                          <input name="teamEmail" id="leaderEmail-input" type="email" placeholder="Enter the team email"/>
+                                        </div>
+                                        <div class="field">
+                                          <div class="label">Team Contact Number</div>
+                                          <input name="Contact-Number"  id="teamContact-input" type="Number" placeholder="Enter the team contact number"/>
+                                        </div>
+                                        <div class="field btns">
+                                          <button class="prev-1 prev">Previous</button>
+                                          <button class="next-1 next">Next</button>
+                                        </div>
+                                      </div>
+                                      <div class="page">
+                                       <div class="field ">
+                                          <div class="label R-club">If anyone in the team associated with a Rotaract club, Please enter your name and the Rotaract club name </div>
+                                       </div>
+                                       <div>
+                                           <div class="field">  
+                                               <input name="Name-1" class="name1-input" id="name1-input" type="text" value="" placeholder="Enter your name" />
+                                               <input name="Club-1" id="club-input" type="text" placeholder="Enter the club name" />
+                                            </div>
+                                            
+                                            <div class="field ">
+                                                <input name="Name-2" id="name2-input" type="text" placeholder="Enter your name"  />
+                                                <input  name="Club-2" id="club-input" type="text" placeholder="Enter the club name" />
+                                            </div>
+                                            
+                                            <div class="field ">
+                                                <input name="Name-3" id="name3-input" type="text" placeholder="Enter your name" />
+                                                <input name="Club-3" id="club-input" type="text" placeholder="Enter the club name" />
+                                            </div>    
+                                        </div>
+
+                                        <div class="field btns Add-btn">
+                                          <button class="prev-2 prev">Previous</button>
+                                          <button class="next-2 next">Next</button>
+                                        </div>
+                                      </div>
+
+                                      <div class="page">
+                                        <div class="field">
+                                            <div class="label">Rules and Regualtions</div>
+                                            <a href="./packages/pdf/" attributes-list download="" class="download-btn" id="download-btn" type="button"><i class="fa fa-download"></i>Download</a>
+                                        </div>
+
+                                        <div class="field">
+                                            <div class="label">For Queries</div>
+                                            <textarea name="Queries" rows="30" cols="70" id="query-input" type="text"></textarea>
+                                          </div>
+
+                                        <div class="field">
+                                          <div class="label merch">
+                                            Are you interested in our Official Parallax Merchandise, Type in YES/NO below.
+                                          </div>
+                                          <input name="Merchandise" id="merchandise-input" type="text" class="merchandise-input" />
+                                        </div>
+                                        
+                                        <div class="field btns last-btns">
+                                          <button class="prev-3 prev">Previous</button>
+                                          <button type="submit" class="submit" id="submit-btn" >Submit</button>
+                                        </div>
+                                      </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="merch section">
+                <div class="merch__bg">
+                    <div class="merch__container container">
+                        <h2 class="section__title merch__title">Our Official <br> Merchandise</h2>
+                        <p class="merch__description">Drop a message on the allocated field in the registration form to confirm your order.</p>
+    
+                        <div action="" class="merch__form">
+                            <img src="./packages/img/merch.jpeg" alt="merchandise-poster" class="Merch-img"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== SPONSORS ====================-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="packages/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="packages/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="packages/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="packages/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="packages/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Parallax - 2021</h3>
+                        <p class="footer__description">
+                            A Hackathon that you'd never experienced <br> before.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/iitrotaract" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/iitrotaract?s=11" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href=" https://www.instagram.com/rotaract_iit/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href=" https://www.youtube.com/user/iitrotaract" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="http://rciit.org/" target="_blank"  class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://rciit.org/board-of-directors-21-22/" target="_blank"  class="footer__link">Our Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="http://rciit.org/" target="_blank"  class="footer__link">RACIIT</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Our Works</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" target="_blank"  >Projects</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://rciit.org/blogs/" class="footer__link" target="_blank" >Our Blogs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://www.youtube.com/user/iitrotaract" class="footer__link" target="_blank" >Our Vlogs</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Contact Us</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="https://rciit.org/contact-us/" class="footer__link" target="_blank" >FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://rciit.org/contact-us/" class="footer__link" target="_blank" >Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="mailto:sandundemaria7@gmail.com" class="footer__link" target="_blank" >Send Queries</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2021 RACIIT. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="packages/js/swiper-bundle.min.js"></script>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="packages/js/scrollreveal.min.js"></script>
+
+        <!--=============== Prize cards Tilt ===============-->
+        <script src="packages/js/vanilla-tilt.js"></script>
+    
+        <!--=============== JQuery =================== -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!--=============== SWEET ALERT ===============-->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- ========== Nav scroll active =========== -->
+        <script src="packages/js/jquery.nav.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="packages/js/main.js"></script>
+
+        <script>
+            window.addEventListener("load", () => {
+                const preloader = document.querySelector(".preloader");
+                preloader.classList.add("preloader-finish");
+            });
+        </script>
+
+         <!--=============== Confirmation email ===============-->
+        <script> 
+            $("#submit-form").submit((e)=>{
+                e.preventDefault();
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbxSnvafc3kmYR-QzNlux2h40NaMl3tsJ5Qwd3usk3kEvGKiY-wpGvxz18TUAdQCwNiv/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Registration Successful",
+                            footer: "<p>Please be aware of our future emails.</p>",
+                            showConfirmButton: false,
+                            showCancelButton: false,
+                            background: "#edfffc",
+                            timer: 5000,
+                        })
+                        document.getElementById('submit-form').reset();
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 5000);
+                       
+                    },
+                    error:function (err){
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Something went wrong!",
+                            footer: "<p>Please check the missing fields</p>",
+                            background: "#edfffc",
+                            showCancelButton: false,
+                            color: "fff",
+                            timer: 6000,
+                        })
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

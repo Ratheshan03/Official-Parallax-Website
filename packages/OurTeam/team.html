@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax - 2021 | Our Team</title>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="preloader"></div>
+    <div class="container">
+      <div class="nav">
+        <div class="nav-btn">
+          <button
+            href="#"
+            class="button button--flex button--link home__info-button"
+            id="home-btn"
+            onclick="window.location = 'index.html'; "
+          >
+            <i class="ri-arrow-left-line"></i> Home
+          </button>
+        </div>
+        <h1 class="heading"><span>meet</span>Our Team</h1>
+        <img src="../img/nav-logo.png" class="nav-logo" alt="logo" />
+      </div>
+      <br /><br />
+      <div class="profiles">
+        <div class="profile">
+          <img src="../img/Koushi.jpg" class="profile-img koushi" />
+
+          <h3 class="user-name">Koushika <br />Umesh</h3>
+          <h5>Chair-Person</h5>
+        </div>
+        <div class="profile">
+          <img src="../img/nethmi.jpeg" class="profile-img Nethmi" />
+
+          <h3 class="user-name">Nethmi <br />Mohotti</h3>
+          <h5>Secretary</h5>
+        </div>
+        <div class="profile">
+          <img src="../img/jeeona.jpeg" class="profile-img jeeona" />
+
+          <h3 class="user-name">Jeeona <br />Heltica</h3>
+          <h5>Treasurer</h5>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container">
+      <div class="profiles">
+        <div class="profile">
+          <img src="../img/nipun.jpeg" class="profile-img" />
+
+          <h3 class="user-name">Nipun <br />Chamika</h3>
+          <h5>Public Relations</h5>
+        </div>
+        <div class="profile">
+          <img src="../img/ratheshan.JPG" class="profile-img nipun" />
+
+          <h3 class="user-name">Ratheshan <br />Sathiyamoorthy</h3>
+          <h5>Event in Charge</h5>
+        </div>
+        <div class="profile">
+          <img src="../img/maliya.jpg" class="profile-img" />
+
+          <h3 class="user-name">Malitha <br />Randeniya</h3>
+          <h5>Volunteer in Charge</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="profiles">
+        <div class="profile">
+          <img src="../img/sandun.jpeg" class="profile-img" />
+
+          <h3 class="user-name">Sandun <br />De Silva</h3>
+          <h5>IT Director</h5>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__rights">
+          <p class="footer__copy">&#169; 2021 RACIIT. All rigths reserved.</p>
+          <div class="footer__terms">
+            <a href="#" class="footer__terms-link">Terms & Agreements</a>
+            <a href="#" class="footer__terms-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener("load", () => {
+        const preloader = document.querySelector(".preloader");
+        preloader.classList.add("preloader-finish");
+      });
+
+      document.getElementById("home-btn").onclick = function () {
+        location.href = "";
+      };
+    </script>
+  </body>
+</html>
