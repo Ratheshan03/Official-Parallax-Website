@@ -1230,7 +1230,7 @@ form .page .btns button.next {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 372px) {
   .preloader {
     background: #000 url(../img/Img-loader.gif) no-repeat center center;
     background-size: 25%;
@@ -1292,6 +1292,103 @@ form .page .btns button.next {
 
   .image__overlay {
     max-height: 255px;
+  }
+}
+
+@media screen and (max-height: 680px) {
+  .preloader {
+    background: #000 url(../img/Img-loader.gif) no-repeat center center;
+    background-size: 24%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .register__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .experience__content {
+    padding: 0;
+  }
+
+  .home__img {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .home__info {
+    width: 180px;
+    padding: 1rem;
+    bottom: 9rem;
+  }
+
+  .home__data-subtitle {
+    font-style: italic;
+    font-size: 13px !important;
+    margin-top: 20px !important;
+    margin-left: 5px;
+  }
+  .experience__img,
+  .video__container {
+    padding: 0;
+  }
+
+  .image__overlay {
+    max-height: 255px;
+  }
+
+  .video__container {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+
+  .nav__logo {
+    width: 95px;
+    height: 80px;
+  }
+
+  .day,
+  .hour,
+  .min,
+  .sec {
+    font-size: 2rem;
+    color: #457b9d;
+    padding: 22px;
+  }
+
+  .register {
+    max-width: 948px;
+    margin-left: auto;
+    align-content: center;
+    margin-right: auto;
+  }
+
+  .ex-co {
+    position: relative;
+    display: grid;
+  }
+
+  .section-f {
+    height: 85vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imgB {
+    height: 85vh;
+  }
+
+  .contentB {
+    height: 85vh;
+  }
+
+  .container-f {
+    height: 85vh;
   }
 }
 
@@ -1746,6 +1843,7 @@ form .page .btns button.next {
   .container-f {
     gap: 3rem 2rem;
   }
+
   .video__content {
     position: relative;
     width: 40vw;
@@ -1774,14 +1872,21 @@ form .page .btns button.next {
   }
 
   .register {
-    max-width: 970px;
+    min-width: 90vw;
     align-items: center;
     justify-content: center;
-    margin-left: 290px !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container-f {
     background: rgba(255, 255, 255, 0.62);
+    min-width: 400px;
+  }
+
+  .section-f {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container-f .form-outer {
@@ -1818,12 +1923,23 @@ form .page .btns button.next {
     height: 740px;
     width: 100%;
   }
-  .imgB {
-    width: 100%;
-  }
 
   .register {
-    margin: 0;
+    min-width: 85vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-f {
+    background: rgba(255, 255, 255, 0.62);
+    min-width: 450px;
+  }
+
+  .section-f {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container-f {
