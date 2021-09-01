@@ -150,6 +150,7 @@ sr.reveal(
            .discover__container,
            .experience__data, .experience__overlay,
            .place__card,
+           .experience__img-one,
            .sponsor__content,
            .footer__data, .footer__rights`,
   {
