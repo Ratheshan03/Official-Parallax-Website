@@ -1080,7 +1080,7 @@ form .page .btns button.next {
 /* Merch */
 
 .merch__bg {
-  background-color: var(--first-color-second);
+  background-color: var(--input-color);
   padding: 2.5rem 0;
 }
 
@@ -1233,7 +1233,7 @@ form .page .btns button.next {
 @media screen and (max-width: 372px) {
   .preloader {
     background: #000 url(../img/Img-loader.gif) no-repeat center center;
-    background-size: 25%;
+    background-size: 27%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -1316,7 +1316,7 @@ form .page .btns button.next {
 @media screen and (max-height: 680px) {
   .preloader {
     background: #000 url(../img/Img-loader.gif) no-repeat center center;
-    background-size: 24%;
+    background-size: 26%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -1413,7 +1413,7 @@ form .page .btns button.next {
 @media screen and (min-width: 372px) {
   .preloader {
     background: #000 url(../img/Img-loader.gif) no-repeat center center;
-    background-size: 24%;
+    background-size: 26%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -1511,7 +1511,7 @@ form .page .btns button.next {
 @media screen and (min-width: 410px) {
   .preloader {
     background: #000 url(../img/Img-loader.gif) no-repeat center center;
-    background-size: 20%;
+    background-size: 23%;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -2061,12 +2061,12 @@ form .page .btns button.next {
   }
 
   .Merch-img {
-    height: 45vh;
+    height: 50vh;
     align-items: center;
   }
 
   .merch__form {
-    height: 50vh;
+    height: 52vh;
     width: 80vw;
     background-color: var(--input-color);
     justify-items: center;
@@ -2089,7 +2089,7 @@ form .page .btns button.next {
   }
 
   .register {
-    min-width: 80vw;
+    min-width: 77vw;
     align-items: center;
     justify-content: center;
     margin-left: auto;
