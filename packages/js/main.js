@@ -148,7 +148,7 @@ const sr = ScrollReveal({
 sr.reveal(
   `.home__data, .home__social-link, .home__info,
            .discover__container,
-           .experience__data, .experience__overlay,
+           .experience__data, .image-container,
            .place__card,
            .experience__img-one,
            .sponsor__content,
@@ -192,11 +192,11 @@ const selectedIcon = localStorage.getItem("selected-icon");
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? "dark" : "light";
+  document.body.classList.contains(darkTheme) ? "light" : "dark";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "ri-moon-line" : "ri-sun-line";
 
-// We validate if the user previously chose a topic
+// We validate if the user previously choose a topic
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](

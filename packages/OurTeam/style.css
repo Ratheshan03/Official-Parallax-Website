@@ -187,14 +187,6 @@ button:hover {
   transform: translateX(-10px);
 }
 
-input {
-  outline: none;
-}
-
-.main {
-  overflow-x: hidden;
-}
-
 .nav {
   top: 0;
   left: 0;
@@ -213,40 +205,45 @@ footer {
 }
 
 .container {
-  top: 0;
-  margin-right: 40px;
-  margin-left: 40px;
+  width: 90vw;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading {
-  font-size: 60px;
+  font-size: 50px;
   color: white;
 }
 
 .heading span {
   font-style: italic;
   font-size: 30px;
+  margin-right: 20px;
 }
 
 .profiles {
   display: flex;
-  justify-content: space-around;
-  margin: 20px 80px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .profile {
-  flex-basis: 260px;
-  margin: 20px;
+  height: 200px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .profile .profile-img {
-  height: 260px;
-  width: 260px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
   filter: grayscale(100%);
   cursor: pointer;
@@ -257,10 +254,16 @@ footer {
   filter: grayscale(0);
 }
 
+.profile-des {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .user-name {
-  margin-top: 30px;
-  font-size: 35px;
-  margin-left: 0px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .profile h5 {
@@ -268,34 +271,19 @@ footer {
   font-weight: 200;
   letter-spacing: 3px;
   color: rgb(3, 190, 119);
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.profile p {
-  font-size: 16px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
-  align-items: center;
 }
 
 .preloader {
   background: #000 url(../img/Img-loader.gif) no-repeat center center;
   background-size: 18%;
   height: 100vh;
-  width: 100%;
+  width: 50vw;
   position: fixed;
   z-index: 1000;
   transition: opacity 0.1s ease-out;
   top: 0;
-}
-
-.koushi {
-  height: 300px;
-}
-
-.nipun {
-  height: 400px;
 }
 
 .preloader-finish {
@@ -393,10 +381,19 @@ footer {
   }
 
   .container {
-    top: 0;
     width: 80vw;
     color: white;
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading {
+    font-size: 28px;
+    color: white;
   }
 
   .nav-btn {
@@ -410,22 +407,24 @@ footer {
 
   .profiles {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
   }
 
   .profile {
-    flex-basis: 260px;
-    margin: 20px;
+    height: 200px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin: 70px;
   }
 
   .profile .profile-img {
-    height: 210px;
-    width: 210px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     filter: grayscale(100%);
     cursor: pointer;
@@ -448,11 +447,21 @@ footer {
     justify-content: space-between;
   }
 
+  .button {
+    font-size: 18px;
+    height: 40px;
+    width: 90px;
+  }
+
   .container {
-    top: 0;
-    width: 80vw;
+    width: 90vw;
     color: white;
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .nav-btn {
@@ -466,26 +475,34 @@ footer {
 
   .profiles {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
   }
 
   .profile {
-    flex-basis: 260px;
-    margin: 20px;
+    height: 220px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin: 70px;
   }
 
   .profile .profile-img {
-    height: 230px;
-    width: 230px;
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     filter: grayscale(100%);
     cursor: pointer;
     transition: 400ms;
+  }
+
+  .profile-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile:hover .profile-img {
@@ -503,6 +520,12 @@ footer {
     justify-content: space-between;
   }
 
+  .button {
+    font-size: 20px;
+    height: 50px;
+    width: 120px;
+  }
+
   .container {
     top: 0;
     width: 80vw;
@@ -521,14 +544,31 @@ footer {
   }
 
   .profiles {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
     margin: 20px 20px;
+    margin-top: 40px;
+  }
+
+  .sand {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sand-s {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
 
   .profile {
-    flex-basis: 260px;
-    margin: 20px;
+    height: 250px;
+    width: 250px;
+    margin: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -552,42 +592,12 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .section {
-    padding: 4rem 0 2.5rem;
-  }
-
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .profiles {
-    flex-direction: column;
-  }
-  .footer__content {
-    justify-items: center;
-    margin-left: 60px;
-  }
-  .footer__rights {
-    flex-direction: row;
+@media only screen and (min-width: 1024px) {
+  .nav {
+    display: flex;
     justify-content: space-between;
   }
 
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-
-  .profile p {
-    text-align: center;
-    margin: 20px 60px 80px 60px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
   .heading {
     font-size: 40px;
     color: white;
@@ -595,14 +605,171 @@ footer {
   }
 
   .heading span {
-    font-size: 15px;
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+    height: 50px;
+    width: 120px;
+  }
+
+  .container {
+    top: 0;
+    width: 90vw;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-btn {
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+
+  .nav-logo {
+    display: none;
   }
 
   .profiles {
-    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    margin: 20px 20px;
+    margin-top: 40px;
   }
 
-  .profile p {
-    margin: 20px 10px 80px 10px;
+  .sand {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sand-s {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .profile {
+    height: 250px;
+    width: 250px;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile .profile-img {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  .profile:hover .profile-img {
+    filter: grayscale(0);
+  }
+
+  .footer__rights {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    font-size: 22px;
+    height: 60px;
+    width: 140px;
+  }
+
+  .heading {
+    font-size: 43px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 22px;
+  }
+
+  .profiles {
+    width: 70vw;
+    margin-top: 40px;
+  }
+
+  .profile {
+    margin: 80px;
+  }
+
+  .sand {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sand-s {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    font-size: 22px;
+    height: 70px;
+    width: 140px;
+  }
+
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 25px;
+  }
+
+  .profiles {
+    margin-top: 50px;
+    width: 70vw;
+  }
+
+  .profile {
+    margin: 80px;
+  }
+
+  .sand {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sand-s {
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
