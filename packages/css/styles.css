@@ -556,22 +556,25 @@ input {
 
 .discover__title,
 .discover__description {
-  color: var(--white-color);
+  color: black;
 }
 
 .discover__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-25);
+  font-size: 26px !important;
+  margin-bottom: var(--mb-0-5);
+  font-weight: 600;
 }
 
 .discover__description {
   display: block;
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
+  font-weight: 700;
 }
 
 .discover__img {
   transition: var(--img-transition);
   background-color: var(--first-color-alt);
+  opacity: 75%;
 }
 
 .discover__img:hover {
@@ -1101,6 +1104,15 @@ form .page .btns button.next {
   margin-right: auto;
 }
 
+.Merch-img {
+  transition: var(--img-transition);
+}
+
+.Merch-img:hover {
+  cursor: pointer;
+  transform: var(--img-scale);
+}
+
 /*=============== SPONSORS ===============*/
 .sponsor__container {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
@@ -1109,12 +1121,12 @@ form .page .btns button.next {
 }
 
 .sponsor__content:hover .sponsor__img {
-  filter: invert(0.5);
+  filter: invert(0.3);
 }
 
 .sponsor__img {
-  width: 90px;
-  filter: invert(0.7);
+  width: 195px;
+  filter: invert(0.1);
   transition: var(--img-transition);
 }
 
@@ -2130,12 +2142,12 @@ form .page .btns button.next {
   }
 
   .Merch-img {
-    height: 45vh;
+    height: 55vh;
     align-items: center;
   }
 
   .merch__form {
-    height: 50vh;
+    height: 60vh;
     max-width: 80vw;
     background-color: var(--input-color);
     justify-items: center;
