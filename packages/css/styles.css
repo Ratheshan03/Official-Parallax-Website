@@ -560,7 +560,7 @@ input {
 }
 
 .discover__title {
-  font-size: 26px !important;
+  font-size: 25px !important;
   margin-bottom: var(--mb-0-5);
   font-weight: 600;
 }
